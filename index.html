@@ -1,0 +1,262 @@
+<html>
+  <head>
+    <script src="https://cdn-webgl.wrld3d.com/wrldjs/dist/latest/wrld.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="map" class="col-md-12"></div>
+    <script type="text/javascript">
+      var map = L.Wrld.map("map", "1b48ac93b46fc2d01d3e899865c910f3",{
+	center: [56.4405, -6.0009],
+	zoom: 9.65
+	});
+
+   	var size1Mrkr = L.marker([56.47863, -5.7382286], { title: "Size 1 settlement" }).addTo(map);
+        size1Mrkr.bindPopup("Sgalasdail/Scallastle: \n Settlement size - 1 \n Modern English Translation - (cattle-)milking-place").openPopup();
+        var size1Mrkr2 = L.marker([56.346927, -5.840284], { title: "Size 1 settlement #2" }).addTo(map);
+        var size1Mrkr3 = L.marker([56.486199, -5.9860091], { title: "Size 1 settlement #3" }).addTo(map);
+
+        var size2Mrkr = L.marker([56.509981, -5.9169503], { title: "Size 2 settlement"}).addTo(map);
+        var size2Mrkr2 = L.marker([56.378125, -5.731608], { title: "Size 2 settlement #2"}).addTo(map);
+        var size2Mrkr3 = L.marker([56.496877, -5.7887944], { title: "Size 2 settlement #3"}).addTo(map);
+        var size2Mrkr4 = L.marker([56.368841, -5.8003658], { title: "Size 2 settlement #4"}).addTo(map);
+        var size2Mrkr5 = L.marker([56.508728, -5.8420152], { title: "Size 2 settlement #5"}).addTo(map);
+        var size2Mrkr6 = L.marker([56.354392, -5.8604706], { title: "Size 2 settlement #6"}).addTo(map);
+        var size2Mrkr7 = L.marker([56.514872, -5.9044435], { title: "Size 2 settlement #7"}).addTo(map);
+        var size2Mrkr8 = L.marker([56.46814, -5.8460314], { title: "Size 2 settlement #8"}).addTo(map);
+        var size2Mrkr9 = L.marker([56.379236, -5.9845395], { title: "Size 2 settlement #9"}).addTo(map);
+        var size2Mrkr10 = L.marker([56.49563, -5.9723681], { title: "Size 2 settlement #10"}).addTo(map);
+        var size2Mrkr11 = L.marker([56.376357, -5.7006467], { title: "Size 2 settlement #11"}).addTo(map);
+        var size2Mrkr12 = L.marker([56.443725, -5.8792765], { title: "Size 2 settlement #12"}).addTo(map);
+        var size2Mrkr13 = L.marker([56.370416, -5.7486758], { title: "Size 2 settlement #13"}).addTo(map);
+        var size2Mrkr14 = L.marker([56.508383, -5.8240925], { title: "Size 2 settlement #14"}).addTo(map);
+        var size2Mrkr15 = L.marker([56.478682, -5.8828472], { title: "Size 2 settlement #15"}).addTo(map);
+        var size2Mrkr16 = L.marker([56.342065, -5.9094157], { title: "Size 2 settlement #16"}).addTo(map);
+        var size2Mrkr17 = L.marker([56.505165, -5.8985661], { title: "Size 2 settlement #17"}).addTo(map);
+        var size2Mrkr18 = L.marker([56.486901, -5.878812], { title: "Size 2 settlement #18"}).addTo(map);
+        var size2Mrkr19 = L.marker([56.511769, -5.8016659], { title: "Size 2 settlement #19"}).addTo(map);
+
+        var size3Mrkr = L.marker([56.335418, -5.7759947], { title: "Size 3 settlement"}).addTo(map);
+        var size3Mrkr2 = L.marker([56.366242, -5.7677058], { title: "Size 3 settlement #2"}).addTo(map);
+        var size3Mrkr3 = L.marker([56.354581, -5.8831644], { title: "Size 3 settlement #3"}).addTo(map);
+        var size3Mrkr4 = L.marker([56.363611, -5.7949848], { title: "Size 3 settlement #4"}).addTo(map);
+        var size3Mrkr5 = L.marker([56.356374, -5.8833469], { title: "Size 3 settlement #5"}).addTo(map);
+        var size3Mrkr6 = L.marker([56.353228, -5.8976028], { title: "Size 3 settlement #6"}).addTo(map);
+        var size3Mrkr7 = L.marker([56.391284, -5.9452684], { title: "Size 3 settlement #7"}).addTo(map);
+        var size3Mrkr8 = L.marker([56.346131, -5.8369654], { title: "Size 3 settlement #8"}).addTo(map);
+        var size3Mrkr9 = L.marker([56.345869, -5.7575985], { title: "Size 3 settlement #9"}).addTo(map);
+        var size3Mrkr10 = L.marker([56.335229, -5.9265228], { title: "Size 3 settlement #10"}).addTo(map);
+        var size3Mrkr11 = L.marker([56.442546, -5.8304555], { title: "Size 3 settlement #11"}).addTo(map);
+
+        var size4Mrkr = L.marker([56.466488, -5.8702299], { title: "Size 4 settlement" }).addTo(map);
+
+        var size1Circle = L.circle([56.47863, -5.7382286], {
+          color: 'red',
+          fillColor: '#f03',
+          fillOpacity: 0.5,
+          radius: 200.0
+        }).addTo(map);
+        var size1Circle2 = L.circle([56.346927, -5.840284], {
+          color: 'red',
+          fillColor: '#f03',
+          fillOpacity: 0.5,
+          radius: 200.0
+        }).addTo(map);
+        var size1Circle3 = L.circle([56.486199, -5.9860091], {
+          color: 'red',
+          fillColor: '#f03',
+          fillOpacity: 0.5,
+          radius: 200.0
+        }).addTo(map);
+
+        var size2Circle = L.circle([56.509981, -5.9169503], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle2 = L.circle([56.378125, -5.731608], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle3 = L.circle([56.496877, -5.7887944], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle4 = L.circle([56.368841, -5.8003658], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle5 = L.circle([56.508728, -5.8420152], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle6 = L.circle([56.354392, -5.8604706], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle7 = L.circle([56.514872, -5.9044435], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle8 = L.circle([56.46814, -5.8460314], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle9 = L.circle([56.379236, -5.9845395], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle10 = L.circle([56.49563, -5.9723681], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle11 = L.circle([56.376357, -5.7006467], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle12 = L.circle([56.443725, -5.8792765], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle13 = L.circle([56.370416, -5.7486758], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle14 = L.circle([56.508383, -5.8240925], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle15 = L.circle([56.478682, -5.8828472], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle16 = L.circle([56.342065, -5.9094157], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle17 = L.circle([56.505165, -5.8985661], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle18 = L.circle([56.486901, -5.878812], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+        var size2Circle19 = L.circle([56.511769, -5.8016659], {
+          color: 'blue',
+          fillColor: '#20f',
+          fillOpacity: 0.5,
+          radius: 150.0
+        }).addTo(map);
+
+        var size3Circle = L.circle([56.335418, -5.7759947], {
+          color: 'green',
+          fillColor: '#2f0',
+          fillOpacity: 0.5,
+          radius: 100.0
+        }).addTo(map);
+        var size3Circle2 = L.circle([56.366242, -5.7677058], {
+          color: 'green',
+          fillColor: '#2f0',
+          fillOpacity: 0.5,
+          radius: 100.0
+        }).addTo(map);
+        var size3Circle3 = L.circle([56.354581, -5.8831644], {
+          color: 'green',
+          fillColor: '#2f0',
+          fillOpacity: 0.5,
+          radius: 100.0
+        }).addTo(map);
+        var size3Circle4 = L.circle([56.363611, -5.7949848], {
+          color: 'green',
+          fillColor: '#2f0',
+          fillOpacity: 0.5,
+          radius: 100.0
+        }).addTo(map);
+        var size3Circle5 = L.circle([56.356374, -5.8833469], {
+          color: 'green',
+          fillColor: '#2f0',
+          fillOpacity: 0.5,
+          radius: 100.0
+        }).addTo(map);
+        var size3Circle6 = L.circle([56.353228, -5.8976028], {
+          color: 'green',
+          fillColor: '#2f0',
+          fillOpacity: 0.5,
+          radius: 100.0
+        }).addTo(map);
+        var size3Circle7 = L.circle([56.391284, -5.9452684], {
+          color: 'green',
+          fillColor: '#2f0',
+          fillOpacity: 0.5,
+          radius: 100.0
+        }).addTo(map);
+        var size3Circle8 = L.circle([56.346131, -5.8369654], {
+          color: 'green',
+          fillColor: '#2f0',
+          fillOpacity: 0.5,
+          radius: 100.0
+        }).addTo(map);
+        var size3Circle9 = L.circle([56.345869, -5.7575985], {
+          color: 'green',
+          fillColor: '#2f0',
+          fillOpacity: 0.5,
+          radius: 100.0
+        }).addTo(map);
+        var size3Circle10 = L.circle([56.335229, -5.9265228], {
+          color: 'green',
+          fillColor: '#2f0',
+          fillOpacity: 0.5,
+          radius: 100.0
+        }).addTo(map);
+        var size3Circle11 = L.circle([56.442546, -5.8304555], {
+          color: 'green',
+          fillColor: '#2f0',
+          fillOpacity: 0.5,
+          radius: 100.0
+        }).addTo(map);
+
+        var size4Circle = L.circle([56.466488, -5.8702299], {
+          color: 'yellow',
+          fillColor: '#ff0',
+          fillOpacity: 0.5,
+          radius: 50.0
+        }).addTo(map);
+     </script>
+  </body>
+</html>
